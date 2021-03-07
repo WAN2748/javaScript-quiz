@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Comptible" content="ie=edge" />
+    <title>JS Quiz</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header>
+        <div id="timer">
+            <h2 id="clock">Time</h2>
+        </div>
+    </header>
+    <div class="container">
+        <div id="home" class="flex-column flex-center">
+            <h1>JS Quiz</h1>
+            <button type="button" class="btn">Start</button>
+            <button type="button" id="highscore-btn" class="btn">High Scores</button>
+            <button class="btn" onclick="ruleBtn()">Rules</button>
+            <div id="ruleList" style="display: none;">
+                <li>You will have 10 seconds to anwser</li>
+                <li>Correct anwsers will add time</li>
+                <li>Incorrect anwsers will deduct time</li>
+            </div>
+        </div>
+       <div class="quiz-container" style='display: none;'>
+        <div class="quiz-box" id="quiz">
+            <h1>Question</h1>
+
+            <div id="answers" class="btn">
+                <div class="answer" id="A" onclick="checkAanwser('A')">A</div>
+                <div class="answer" id="B" onclick="checkAanwser('B')">B</div>
+                <div class="answer" id="C" onclick="checkCanwser('C')">C</div>
+                <div class="answer" id="D" onclick="checkDanwser('D')">D</div>
+
+
+            </div>
+        </div>
+            <script src="quiz.js"></script>
+</body>
+
+</html>
